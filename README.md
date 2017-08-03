@@ -9,5 +9,5 @@ Teachers using Socra can not only see how many times their students have spoken 
 ### In Future Updates
 Future updates will bring exciting new features!!!
 
-⋅⋅* Students and teachers will be able to make their accounts and log in to keep their preferences and classes saved.
-⋅⋅* Teachers will be able to create their own discussions (Current version requires teachers to contact admin).
+* Students and teachers will be able to make their accounts and log in to keep their preferences and classes saved.
+* Teachers will be able to create their own discussions (Current version requires teachers to contact admin).
