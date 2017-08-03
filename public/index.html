@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- version 0.0.0 -->
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <title>Socra</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body onload="checkRefresh()">
+  <div id="menuBar"><center><h1>Socra</h1></center></div>
+  <center>
+    <div id="main">
+      <div id="Select User">
+      <div>
+        <h2>Are you a:</h2>
+        <br>
+        <br>
+        <button id="User" onclick="setValueToTeacher()" ontouchstart="setValueToTeacher()" type="button">Teacher</button>
+      </div>
+      <br>
+      <div>
+        <button id="User" onclick="setValueToStudent()" ontouchstart="setValueToStudent(1)" type="button">Student</button>
+      </div>
+      </div>
+      <div id="keyCode">
+        <form>
+          Enter your code here:<br><br>
+          <input type="text" name="code" id="code" maxlength="4" style='font-size: 30px;' onkeypress="return runScript(event)" onsubmit="return false"/>
+        </form>
+      </div>
+      <br>
+      <div id="nameElement">
+        <form>
+          Enter your name here:<br><br>
+          <input type="Text" name="name" id="inputName" style='font-size: 17px;' onkeypress="return setName(event)" onsubmit="return false" maxlength="22"/>
+        </form>
+      </div>
+      <h2 id="currentSpeaker">No one is speaking</h2>
+      <div id="discussionView">
+        <div>
+        </div>
+        <div id="handRaiseElement">
+          <button id="handRaise" ontouchstart="raisedHand(1)" onclick="raisedHand()" type"button">I want to speak!</button>
+        </div>
+      </div>
+      <div id="discussionControlView">
+        <button id="startMeeting" onclick="startMeeting(); closeElement(&quot;startMeeting&quot;); setTimeout(function() {openElement(&quot;studentsTable&quot;)}, 1000); " type="button">Start Meeting</button>
+        <table id="studentsTable" style="opacity:0.0">
+          <tr>
+            <th id="tableHeader-Name">Name</th>
+            <th id="tableHeader-TimeSpoken">Time Spoken</th>
+            <th id="tableHeader-TimesCalledOn">Times Called On</th>
+            <th id="tableHeader-TimesRaisedHand">Raised Hands</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </center>
+  <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB8jdhwtmo5vGGmfHHGnQM_vmms3tO1nMQ",
+      authDomain: "socra-400c0.firebaseapp.com",
+      databaseURL: "https://socra-400c0.firebaseio.com",
+      storageBucket: "socra-400c0.appspot.com",
+      messagingSenderId: "906601089820"
+    };
+    firebase.initializeApp(config);
+    
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

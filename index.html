@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+	<script>
+  	// Initialize Firebase
+  	var config = {
+    	apiKey: "AIzaSyB8jdhwtmo5vGGmfHHGnQM_vmms3tO1nMQ",
+    	authDomain: "socra-400c0.firebaseapp.com",
+    	databaseURL: "https://socra-400c0.firebaseio.com",
+    	storageBucket: "socra-400c0.appspot.com",
+    	messagingSenderId: "906601089820"
+  	};
+  	firebase.initializeApp(config);
+
+  	var bigOne = document.getElementById('bigOne');
+  	var dbRef = firebase.database().ref().child('admin');
+
+  	dbRef.on('value', snap => bigOne.innerText = snap.val());
+	</script>
+</head>
+<body>
+	<h1 id="bigOne"></h1>
+</body>
+</html>

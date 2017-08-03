@@ -1,0 +1,188 @@
+head {
+	padding: 0;
+}
+
+html {
+	overflow: hidden;
+	height: 100%;
+	zoom: 100%;
+}
+
+html, body {
+	margin:0;
+}
+
+body {
+	background: #21252b;
+	color: #ddd;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+
+h1 {
+	font-weight:300;
+	font-size: 80px;
+	color: #656;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 0;
+}
+
+#menuBar {
+	background: #ffe;
+	padding-top: 0px;
+	padding: 0px;
+	top: 0;
+	width: 100%;
+	left: 0;
+	margin: 0;
+	position: fixed;
+	overflow: scroll;
+}
+
+h2 {
+	color: #eee;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+p {
+	color: #eee;
+	text-align: center;
+}
+
+div[id="Select User"], #nameElement, #keyCode {
+	padding-top: 21vh;
+}
+
+#User {
+	color: #656;
+	background-color: #def;
+	text-align: center;
+	width: 150px;
+	height: 60px;
+	border: hidden;
+	font-size: 30px;
+}
+
+#code {
+	width: 100px;
+	background-color: #ffe;
+	border: hidden;
+	position: relative;
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#inputName {
+	width: 210px;
+	background-color: #ffe;
+	border: hidden;
+	position: relative;
+    height: 35px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#nameElement {
+	opacity: 0.0;
+}
+
+
+#keyCode {
+	opacity: 0.0;
+	padding-bottom: 2vh;
+}
+
+
+#handRaise, #startMeeting {
+	color: #656;
+	background-color: #def;
+	text-align: center;
+	width: relative;
+	height: relative;
+	border: hidden;
+	font-size: 23px;
+	margin-top: 15px;
+	padding-top: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+}
+
+#discussionView {
+	opacity:0.0;
+}
+
+#currentSpeaker {
+	opacity: 0.0;
+}
+
+
+table {
+	width: 90%;
+}
+
+#tableHeader {
+	font-family: 'Raleway', sans-serif;
+	color: #eee;
+	background-color
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+}
+
+#tableName {
+	font-family: 'Raleway', sans-serif;
+	color: #eee;
+	font-size: 23px;
+	text-align: left;
+	background: #21252b;
+	padding: 5px;
+	width: 16%;
+}
+
+#tableData {
+	font-family: 'Raleway', sans-serif;
+	color: #eee;
+	font-size: 21px;
+	text-align: left;
+	background: #21252b;
+	padding: 5px;
+	width: 28%;
+}
+
+#tableHeader-Name {
+	width: 16%;
+}
+
+#startMeeting {
+	opacity: 0;
+	margin-top: 0px;
+}
+
+#discussionControlView {
+	margin-top: 50px;
+}
+
+th {
+	font-family: 'Raleway', sans-serif;
+	color: #eee;
+	background-color
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+}
+
+
+
+
+
