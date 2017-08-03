@@ -1,4 +1,4 @@
-# Socra
+# [Socra](https://socra-400c0.firebaseapp.com)
 A great way to facilitate socratic seminars, teacher-friendly and student-friendly. [Socra](https://socra-400c0.firebaseapp.com)
 
 ### How it works
